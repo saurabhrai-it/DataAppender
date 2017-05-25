@@ -9,9 +9,12 @@ public class DataChanger implements AppendData {
 //		String responseTimes = tempPath + "\\ResponseTimes.html";
 //		String throughput = tempPath + "\\Throughput.html";
 //		String index = "\\index.html";
-		String[] pathsOfFile = {tempPath + "\\OverTime.html",tempPath + "\\ResponseTimes.html",tempPath + "\\Throughput.html","\\index.html"};
+		String[] pathsOfFile = {tempPath + "\\OverTime.html",tempPath + "\\ResponseTimes.html",tempPath + "\\Throughput.html",prodLoc +"\\index.html"};
 		
-		
+		for(int temp=0; temp < pathsOfFile.length;temp++)
+		{
+			
+		}		
 		
 	}
 	
