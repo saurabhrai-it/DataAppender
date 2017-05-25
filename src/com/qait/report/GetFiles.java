@@ -13,7 +13,7 @@ public class GetFiles{
 		for(int i =0; i < productFolders.length;i++)
 		{
 			tempFileName = productFolders[i].getName();
-			DataChanger.dataChanger(fileLoc+"\\"+tempFileName);
+			DataChanger.dataChanger(fileLoc+"\\"+tempFileName,tempFileName);
 		}
 	}
 }
