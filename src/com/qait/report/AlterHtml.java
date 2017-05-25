@@ -1,6 +1,7 @@
 package com.qait.report;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.regex.*;
 
 import javax.swing.JOptionPane;
@@ -23,7 +24,12 @@ public class AlterHtml {
             resultFolderFound = resultFolder.matcher(tempFile);
             if(resultFolderFound.find()) {
 //            	JOptionPane.showMessageDialog(null, tempFile);
-            	GetFiles.getFiles(currDir+"\\"+tempFile);
+            	try {
+					GetFiles.getFiles(currDir+"\\"+tempFile);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					JOptionPane.showMessageDialog(null, e);;
+				}
             	
             }
 		}

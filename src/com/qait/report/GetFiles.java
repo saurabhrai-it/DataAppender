@@ -1,11 +1,12 @@
 package com.qait.report;
 
 import java.io.File;
+import java.io.IOException;
 
 public class GetFiles{
 
 	
-	static void getFiles(String fileLoc){
+	static void getFiles(String fileLoc) throws IOException{
 		
 		String tempFileName ="";
 		File productFolderLoc = new File(fileLoc);
