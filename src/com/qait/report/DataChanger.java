@@ -61,8 +61,8 @@ public class DataChanger {
 					else if(s.contains(oldHeadingChange))
 						s = s.replace(oldHeadingChange, headingChange);
 					RAF.writeChars(s);
-					RAF.close();
 				}
+			RAF.close();
 		}
 		
 	}

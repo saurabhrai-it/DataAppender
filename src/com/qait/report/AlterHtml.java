@@ -23,7 +23,7 @@ public class AlterHtml {
 			if(fileList[i].isDirectory())
             resultFolderFound = resultFolder.matcher(tempFile);
             if(resultFolderFound.find()) {
-//            	JOptionPane.showMessageDialog(null, tempFile);
+            	JOptionPane.showMessageDialog(null, tempFile);
             	try {
 					GetFiles.getFiles(currDir+"\\"+tempFile);
 				} catch (Exception e) {
