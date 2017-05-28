@@ -79,6 +79,8 @@ public class DataChanger {
 		            			line = line.replace("style=\"text-align:center;\"","style=\"text-align:center;display:none\"");
 		            		displayBlocker++;
 		            	}
+		            else if (line.contains("<!-- Custom Theme JavaScript -->"))
+		            	line = line.replace("<!-- Custom Theme JavaScript -->", "<script type=\"text/javascript\" src=\"../../valueChecker.js\"></script>");
 		            }
 
 	             lines.add(line);
