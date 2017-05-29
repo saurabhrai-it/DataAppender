@@ -63,19 +63,19 @@ public class DataChanger {
 			                line = line.replace(oldIcon,icon);
 		            else if (line.contains(oldHeadingChange))
 		            		line = line.replace(oldHeadingChange,headingChange);
-		            else if (line.contains("class=\"col-lg-6\""))
-		              {
-		            	if(classChange==1)
-		            	   line = line.replace("class=\"col-lg-6\"","class=\"col-sm-10\"");
-		            	else
-		            	{
-		            		line = line.replace("class=\"col-lg-6\"","class=\"col-sm-1\"");
-		            		classChange=1;
-		            	}
-		              }
+//		            else if (line.contains("class=\"col-lg-6\""))
+//		              {
+//		            	if(classChange==1)
+//		            	   line = line.replace("class=\"col-lg-6\"","class=\"col-sm-10\"");
+//		            	else
+//		            	{
+//		            		line = line.replace("class=\"col-lg-6\"","class=\"col-sm-1\"");
+//		            		classChange=1;
+//		            	}
+//		              }
 		            else if (line.contains("style=\"text-align:center;\""))
 		            	{
-		            		if(displayBlocker==1)
+		            		if(displayBlocker==1||displayBlocker==2)
 		            			line = line.replace("style=\"text-align:center;\"","style=\"text-align:center;display:none\"");
 		            		displayBlocker++;
 		            	}
